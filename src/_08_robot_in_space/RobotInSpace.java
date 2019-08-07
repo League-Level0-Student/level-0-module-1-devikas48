@@ -34,13 +34,26 @@ int down = 40;
 int right = 39;
 int left = 37;
 		// 3. If the up arrow is pressed, move the Robot up the screen.
-
+if(up == keyPressed) {
+	rob.setAngle(360);
+	rob.microMove(10);
+}
 		// 4. If the down arrow is pressed, move the Robot down.
-
+if(down == keyPressed) {
+	rob.setAngle(180);
+	rob.microMove(10);
+}
 		// 5. If the left arrow is pressed, make the Robot go left.
-
+if(right == keyPressed) {
+	rob.setAngle(90);
+	rob.microMove(10);
+}
 		// 6. If right is pressed, move the Robot right.
-
+if(left == keyPressed) {
+	rob.setAngle(270);
+	rob.microMove(10);
+}
+	
 		// 7. Run your program and move the Robot to RD-2D for a surprise!
 	}
 
